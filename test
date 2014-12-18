@@ -27,8 +27,7 @@ output {
   stdout {
     codec => rubydebug
   }
-  elasticsearch_http {
-    host => "localhost"
-    port => "9200"
+  elasticsearch {
+    embedded => true
   }
 }
